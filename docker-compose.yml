@@ -7,8 +7,8 @@ services:
       - "./mariadb:/var/lib/mysql"
 #      - "./dump.sql:/tmp/dump.sql"
     restart: always
-    ports:
-      - "43306:3306"
+#    ports:
+#      - "43306:3306"
     env_file:
       - "./mariadb.env"
   wordpress:
