@@ -1,0 +1,13 @@
+preset: preset1
+accent:
+  color-1: '#ffffff'
+utility:
+  background: '#f4f5f7'
+  text-color: '#424753'
+testimonials:
+  background: '#424753'
+offcanvas:
+  background: '#f4f5f7'
+  text-color: '#424753'
+  toggle-color: '#424753'
+  toggle-visibility: '1'

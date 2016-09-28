@@ -1,0 +1,83 @@
+name: Google Map
+description: Display a Google Map.
+type: particle
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable Google Map particles.
+      default: true
+
+    width:
+      type: input.text
+      label: Map Width
+      description: Set the map width in pixels or percentage. Default is '100%'.
+      default: 100%
+
+    height:
+      type: input.text
+      label: Map Height
+      description: Set the map height in pixels. Default is '500px'.
+      default: 500px
+
+    maptype:
+      type: select.select
+      label: Map Type
+      description: Select the map type..
+      placeholder: 'Select...'
+      default: ROADMAP
+      options:
+        ROADMAP: Roadmap
+        SATELLITE: Satellite
+        HYBRID: Hybrid
+        TERRAIN: Terrain
+
+    latitude:
+      type: input.text
+      label: Latitude
+      description: Enter the latitude of the location.
+      default: 52.052312
+
+    longitude:
+      type: input.text
+      label: Longitude
+      description: Enter the longitude of the location.
+      default: 4.447141
+
+    zoom:
+      type: input.text
+      label: Zoom
+      description: Set the zoom level of the map. It is number between 0 and 22.
+      default: 7
+
+    markertext:
+      type: input.text
+      label: Marker Text
+      description: Type in the marker text.
+      default: 
+
+    scrollwheel:
+      type: select.select
+      label: Scrollwheel
+      description: Enable or disable the scrollwheel map zooming. It is disabled by default.
+      placeholder: 'Select...'
+      default: 0
+      options:
+        1: Enable
+        0: Disable
+
+    css.class:
+      type: input.selectize
+      label: CSS Classes
+      description: CSS class name for the particle.
+      default: 
+
+    extra:
+      type: collection.keyvalue
+      label: Tag Attributes
+      description: Extra Tag attributes.
+      key_placeholder: Key (data-*, style, ...)
+      value_placeholder: Value
+      exclude: ['id', 'class']

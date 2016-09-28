@@ -1,0 +1,207 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1470190788
+layout:
+  /navigation/:
+    -
+      - 'menu-6409 40'
+      - 'logo-9608 20'
+      - 'spacer-5699 20'
+      - 'social-2929 20'
+  /header/:
+    -
+      - logo-7066
+  /intro/:
+    -
+      - 'custom-5807 45'
+      - 'spacer-9107 10'
+      - 'custom-8892 45'
+    -
+      - custom-3584
+  /features/:
+    -
+      - custom-3593
+    -
+      - googlemap-4681
+  /utility/:
+    -
+      - 'custom-6076 50'
+      - 'custom-7290 50'
+    -
+      - custom-2120
+    -
+      - 'spacer-2332 33.3'
+      - 'position-widget-1473 33.3'
+      - 'spacer-7702 33.3'
+  /above/:
+    -
+      - custom-9367
+  /testimonials/: {  }
+  /expanded/: {  }
+  /container-main/:
+    -
+      -
+        'mainbar 70': {  }
+      -
+        'sidebar 30': {  }
+  /footer/:
+    -
+      - 'custom-2681 85'
+      - 'totop-8670 15'
+  /offcanvas/:
+    -
+      - mobile-menu-5697
+structure:
+  navigation:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+  header:
+    attributes:
+      boxed: ''
+      class: g-flushed
+  intro:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  features:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  utility:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  above:
+    type: section
+    attributes:
+      boxed: '0'
+      class: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+  offcanvas:
+    attributes:
+      boxed: ''
+content:
+  menu-6409:
+    attributes:
+      menu: menu
+  logo-9608:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://logo.png'
+      svg: ''
+  social-2929:
+    attributes:
+      items:
+        -
+          icon: 'fa fa-twitter fa-fw'
+          text: ''
+          link: 'http://www.twitter.com/PartidoPirataBR'
+          name: Twitter
+        -
+          icon: 'fa fa-facebook fa-fw'
+          text: ''
+          link: 'http://www.facebook.com/PartidoPirata.BR'
+          name: Facebook
+  logo-7066:
+    title: 'Logo / Image'
+    attributes:
+      image: 'gantry-media://header/anapiratacover.jpg'
+      svg: ''
+      class: ''
+  custom-5807:
+    title: Sobre
+    attributes:
+      html: "<div class=\"fp-intro\">\n    <a name=\"Sobre\"></a><h2 class=\"g-title\"><b>Sobre</b></h2>\n    <div style=\"padding-left: 25px;\">\n<p>Prevista para ocorrer a cada dois anos, a AnaPirata é a Assembleia Nacional do Partido Pirata, congregando coletivos e indivíduos Piratas de todo o Brasil. A AnaPirata tem dois principais objetivos: \n<br><br>\n- Promover debates procurando aprimorar tanto o Programa quanto o Estatuto do Partido Pirata de modo a aperfeiçoar as propostas do Partido e o consenso do coletivo nacional sobre diversos temas. <br>\n<br>\n- Eleger uma coordenação nacional que será responsável por propor novas medidas, além de planejar e executar as decisões, encaminhamentos e teses adotadas pela Assembleia\n<br><br>\nAlém disso, como um dos poucos momentos de interação presencial entre membros, a AnaPirata serve como um importante momento como laboratório de ferramentas de democracias direta e líquida, como a recente possibilidade da participação de proxies voluntários.</p>\n</div></div>"
+    block:
+      variations: title-center
+      extra:
+        -
+          margin-left: 20px
+  custom-8892:
+    title: Programação
+    attributes:
+      html: "<div class=\"fp-intro\">\n    <a name=\"Programacao\"></a><h2 class=\"g-title\"><b>Programação</b></h2>\n    <p>O evento ocorrerá nos dias 11 a 13 de novembro, com a seguinte programação provisória\n<br><b>11 de Novembro</b><br>\n    19h00 - Palestra de Apresentação do Partido Pirata\n<br>\n    <b>12 de novembro</b><br>\n    9h00 - Abertura da Assembleia<br>\n    9h30 - Grupos de Trabalho Temáticos<br>\n    12h00 - Pausa para Almoço<br>    13h00 - Grupos de Trabalho Temáticos<br>\n18h00 - Assembleia Geral para votação das proposições<br>\n    21h00 - Fim das atividades<br>\n    <b>13 de novembro</b><br>\n    9h00 - Debate Geral sobre composição da nova Coordenação Nacional<br>\n    12h00 - Pausa para Almoço<br>\n    13h00 - Debate entre os candidatos e eleição da Coordenação<br>\n   18h00 - Encerramento da Assembleia e empossamento da nova Coordenação.</p>\n</div>"
+    block:
+      variations: title-center
+  custom-3584:
+    title: 'Custom HTML'
+  custom-3593:
+    title: Local
+    attributes:
+      html: "<div class=\"fp-intro\">\n    <a name=\"Local\"></a><h2 class=\"g-title\"><b>Local</b></h2>\n    <div style=\"padding-left: 25px;\">\n<p>A AnaPirata deste ano ocorrerá na cidade de São Paulo, mais especificamente na ALESP, Assembleia Legislativa do Estado de SP, localizado na Av. Pedro Álvares Cabral, 201 - Parque Ibirapuera, São Paulo - SP, com acesso relativamente fácil por meio de transporte público.<br>\n\nEm breve serão atualizadas sugestões de rotas de acesso à ALESP para aqueles que vem de fora da cidade.</p>\n</div></div>"
+    block:
+      variations: center
+  googlemap-4681:
+    title: 'Google Map'
+    attributes:
+      width: 100%
+      height: 300px
+      maptype: ROADMAP
+      latitude: '-23.580630'
+      longitude: '-46.658260'
+      zoom: '17'
+  custom-6076:
+    title: Financiamento
+    attributes:
+      html: "<div class=\"fp-intro\">\n    <a name=\"Financiamento\"></a><h2 class=\"g-title\"><b>Financiamento</b></h2>\n    <div style=\"padding-left: 25px;\">\n<p>O Financiamento do evento será feito por meio de um crowdfunding cobrindo gastos com alimentação e material gráfico. Todos aqueles que participarem do Crowdfunding irão ganhar as seguintes recompensas, que poderão ser coletadas no evento ou enviadas pelo correio:<br>\n<br><b>Kit Básico - 60 R$:</b>\n<br>*Bandeira do Partido Pirata\n<br>*Camiseta do evento\n<br>*Caderno da AnaPirata\n<br>*Stickers do Partido Pirata\n<br>*Lunch-Box no Sábado e Domingo (apenas presencial)\n<br><br>\n<b>Kit Intermediário - 90 R$:</b><br>\n    Todos os itens do kit básico, mais uma camiseta com estampa à sua escolha<br><br>\n\n<b>Kit Avançado - 120 R$:</b><br>\n    Todos os itens do kit básico, mais duas camiseta com estampa à sua escolha.<br><br>\n\n\n----\nAlém disso, todos os colaboradores terão seu nome incluído em uma bandeira em mosaico compondo o símbolo do partido\n<br>\nPara se inscrever, entre no site do Banque.</p>\n</div></div>"
+    block:
+      variations: center
+  custom-7290:
+    title: Banque
+    attributes:
+      html: " <img src=\"http://anapirata.partidopirata.org/wp-content/uploads/2016/09/anapirata.png\" alt=\"AnaPirata 2016\" style=\"width:496px;height:443px;\">\n\n<p>Contribua com o financiamento coletivo da AnaPirata 2016, doando através do link abaixo</p>\n\n<div class=\"button-outline\"> <a href=\"https://www.banque.com.br/contribuir?cid=855\" target=_blank><button type=\"button\">Clique para doar!</button> </a></div>\n\n"
+    block:
+      variations: center
+  custom-2120:
+    title: Inscrição
+    attributes:
+      html: "<div class=\"fp-intro\">\n    <a name=\"Inscricao\"></a><h2 class=\"g-title\"><b>Inscrição</b></h2>\n    <div style=\"padding-left: 25px;\">\n<p>A entrada na AnaPirata é totalmente gratuita, mas para que possamos mensurar melhor a estrutura pedimos que os interessados se inscrevam no formulário abaixo.</p>\n</div></div>"
+    block:
+      variations: center
+  position-widget-1473:
+    attributes:
+      widget: '{"type":"widget","widget":"ninja_forms_widget","title":"Ninja Forms Widget","options":{"widget":{"form_id":"1","display_title":"0"}}}'
+      key: widget
+    block:
+      variations: 'nopaddingall nomarginall'
+  custom-9367:
+    title: Proposições
+    attributes:
+      html: "<div class=\"fp-intro\">\n    <a name=\"Proposicoes\"></a><h2 class=\"g-title\"><b>Envio de Proposições</b></h2>\n    <div style=\"padding-left: 25px;\">\n<p>A proposição de Teses e de Emendas e Debates tanto no Programa quanto no Estatuto podem ser feitas por qualquer pessoa, seja ela ou não associada ao Partido Pirata. O envio das Propostas pode ser feito até as 23h59 do dia 31 de Outubro para o email anapirata@partidopirata.org. \n<br><br>\nAs proposições enviadas após essa data também serão contempladas e incluídas para apreciação do coletivo nacional, mas as propostas enviadas dentro do prazo acima terão prioridade na determinação dos principais temas a serem abordados e serão utilizadas como base para o planejamento da programação do Evento. As proposições deverão contemplar em seu corpo:\n<br><br>\n    *Objetivo - descrevendo o tema e o propósito daquela proposta\n<br>\n    *Justificativa -  detalhando porque aquele tema é importante e como está de acordo com os princípios defendidos pelos piratas.<br>\n    *Previsão dos artigos do Estatuto e Programa a serem modificados (Apenas para Emendas)\n<br><br>\nNem todas as propostas necessariamente exigem modificação do Programa ou do Estatuto, podendo se referir uma determinada Tese a ser endossada como Consenso Nacional em um terma já contemplado pelo Programa ou o encaminhamento de uma ação que a ser implementada pela Coordenação Nacional pelos próximos dois anos.</p>\n</div></div>"
+    block:
+      variations: title-center
+  custom-2681:
+    title: 'Custom HTML'
+    attributes:
+      html: 'Para qualquer dúvida, sugestão ou outra forma de contato, basta mandar um email para anapirata@partidopirata.org'
+  totop-8670:
+    title: 'To Top'
+    attributes:
+      content: 'voltar ao topo'

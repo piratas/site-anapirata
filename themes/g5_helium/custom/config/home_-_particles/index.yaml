@@ -1,0 +1,53 @@
+name: home_-_particles
+timestamp: 1475037446
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1470190788
+positions: {  }
+sections:
+  navigation: Navigation
+  intro: Intro
+  features: Features
+  utility: Utility
+  above: Above
+  testimonials: Testimonials
+  expanded: Expanded
+  header: Header
+  mainbar: Mainbar
+  sidebar: Sidebar
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  menu:
+    menu-6409: Menu
+  logo:
+    logo-9608: 'Logo / Image'
+    logo-7066: 'Logo / Image'
+  spacer:
+    spacer-5699: Spacer
+    spacer-9107: Spacer
+    spacer-2332: Spacer
+    spacer-7702: Spacer
+  social:
+    social-2929: Social
+  custom:
+    custom-5807: Sobre
+    custom-8892: Programação
+    custom-3584: 'Custom HTML'
+    custom-3593: Local
+    custom-6076: Financiamento
+    custom-7290: Banque
+    custom-2120: Inscrição
+    custom-9367: Proposições
+    custom-2681: 'Custom HTML'
+  googlemap:
+    googlemap-4681: 'Google Map'
+  widget:
+    position-widget-1473: Widget
+  totop:
+    totop-8670: 'To Top'
+  mobile-menu:
+    mobile-menu-5697: Mobile-menu
+inherit: {  }

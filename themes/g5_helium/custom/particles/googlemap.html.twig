@@ -1,0 +1,71 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% set attr_extra = '' %}
+{% if particle.extra %}
+    {% for attributes in particle.extra %}
+        {% for key, value in attributes %}
+            {% set attr_extra = attr_extra ~ ' ' ~ key|e ~ '="' ~ value|e('html_attr') ~ '"' %}
+        {% endfor %}
+    {% endfor %}
+{% endif %}
+
+{% block particle %}
+    {% set indentifier = random() %}
+
+    {# Load assets needed for this particle #}
+    {% assets in 'footer' with { priority: 10 } %}
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+        <script type="text/javascript">
+            function initialize{{ indentifier|e }}() {
+
+                var latlng = new google.maps.LatLng({{ particle.latitude|e }},{{ particle.longitude|e }});
+
+                var myOptions =
+                {
+                    zoom: {{ particle.zoom|e }},
+                    center: latlng,
+                    mapTypeId: google.maps.MapTypeId.{{ particle.maptype|default('ROADMAP')|e }},
+                    scrollwheel: {{ particle.scrollwheel|default(0)|e }}
+                };
+
+                var map = new google.maps.Map(document.getElementById("g-map-{{ indentifier|e }}"), myOptions);
+
+                var myMarker = new google.maps.Marker(
+                {
+                    position: latlng,
+                    map: map,
+                    title: '{{ particle.markertext|e }}'
+                });
+
+                var contentString = '{{ particle.markertext|e }}';
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
+
+                {% if particle.markertext %}
+                myMarker.addListener('click', function() {
+                    infowindow.open(map, myMarker);
+                });
+
+                infowindow.open(map, myMarker);
+                {% endif %}
+
+                // Resize stuff...
+                google.maps.event.addDomListener(window, "resize", function() {
+                    var center = map.getCenter();
+                    google.maps.event.trigger(map, "resize");
+                    map.setCenter(center); 
+                });
+
+            }
+            google.maps.event.addDomListener(window, 'load', initialize{{ indentifier|e }});
+        </script>
+    {% endassets -%}
+    {# End loading assets #}
+
+    <div class="g-googlemap{% if particle.css.class %} {{ particle.css.class|e }}{% endif %}" {% if particle.extra %}{{ attr_extra|raw }}{% endif %} >
+        <div id="g-map-{{ indentifier|e }}" style="width: {{ particle.width|e }}; height: {{ particle.height|e }};">
+        </div>
+    </div>
+{% endblock %}
