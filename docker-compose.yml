@@ -8,7 +8,7 @@ services:
 #      - "./dump.sql:/tmp/dump.sql"
     restart: always
 #    ports:
-#      - "43306:3306"
+#      - "43307:3306"
     env_file:
       - "./mariadb.env"
   wordpress:
@@ -23,8 +23,8 @@ services:
       - "./uploads:/var/www/html/wp-content/uploads"
       - "./plugins:/var/www/html/wp-content/plugins"
     ports:
-      - "42080:80"
-      - "42443:443"
+      - "42081:80"
+      - "42444:443"
     restart: always
     env_file:
       - "./wordpress.env"
