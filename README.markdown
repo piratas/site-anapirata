@@ -26,6 +26,7 @@ O seguintes valores devem ser **iguais**:
 
 Valor em `mariadb.env` | Valor em `wordpress.env`
 --- | ---
+`MYSQL_DATABASE` | `WORDPRESS_DB_NAME`
 `MYSQL_USER` | `WORDPRESS_DB_USER`
 `MYSQL_PASSWORD` | `WORDPRESS_DB_PASSWORD`
 
