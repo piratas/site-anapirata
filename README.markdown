@@ -60,7 +60,7 @@ Se o site estiver configurado para forçar o URL *http://anapirata.partidopirata
 Em primeiro lugar, é necessário descobrir qual é o *ipv4* do container docker onde está o wordpress. Existem várias abordagens para isto, a gambiarra mais rápida é:
 
 ```bash
-docker ps | tail -n +2 | while read cid b; do echo -n "$cid\t"; docker inspect $cid | grep IPAddress | cut -d \" -f 4; done
+docker ps | grep -e 'wordpress' | awk '{ print $1 }' | xargs docker inspect | grep -e 'IPAddress' | grep -e '[0-9]' | sed -e 's/\s*[a-Z":,]*//g'
 ```
 
 ##### Alterar arquivo hosts
